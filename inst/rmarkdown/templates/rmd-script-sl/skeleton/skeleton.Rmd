@@ -1,0 +1,32 @@
+---
+# title: "Template Title"
+# author: "Your Name"
+# date: "The Date"
+# output: output_format
+editor_options:
+  chunk_output_type: console
+---
+```{r setup}
+# Library calls
+library(tidyverse)
+
+# Chunk options
+knitr::opts_chunk$set(echo = TRUE)
+
+# Seed for random number generation
+set.seed(1234)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed) # this adds random seed to all chunks
+knitr::opts_chunk$set(autodep = TRUE)
+knitr::dep_auto()
+```
+
+```{r functions}
+# Custom functions
+
+```
+
+```{r data}
+# reading data
+
+```
+
