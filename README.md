@@ -2,7 +2,7 @@
 Sven Lesche's R package (includes data and custom functions/templates)
 
 ## Installation
-This package is (obviously) not available on CRAN and needs to be installed manually on your machine using `devtools::install_github("SLesche/psysl"). After restarting your R-session, all templates, data and function will be available to you.
+This package is (obviously) not available on CRAN and needs to be installed manually on your machine using `devtools::install_github("SLesche/psysl")`. After restarting your R-session, all templates, data and function will be available to you.
 
 ## Templates
 ### Rmarkdown
