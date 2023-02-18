@@ -1,0 +1,4 @@
+name: apa7-sl
+description: >
+   This template can be used to create a report-structure using papaja.
+create_dir: TRUE

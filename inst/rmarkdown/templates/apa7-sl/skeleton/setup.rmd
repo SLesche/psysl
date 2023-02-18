@@ -1,0 +1,29 @@
+<!-- This file is for LaTeX and R setups -->
+<!-- Latex -->
+<!-- Problem with Latex stuff is, that it won't compile to word correctly... -->
+
+<!-- R -->
+
+```{r setup-libraries}
+# think about calling renv here to make sure everyone has the same packages installed
+
+library(papaja)
+library(tidyverse)
+library(rio)
+library(rmarkdown)
+library(knitr)
+library(afex)
+library(lme4)
+library(psych)
+library(emmeans)
+
+r_refs("r-references.bib")
+
+r_citations <- cite_r(
+  file = "r-references.bib",
+  pkgs = c("papaja", "tidyverse", "knitr", "afex", "emmeans", "lme4", "rmarkdown"),
+  omit = FALSE,
+  footnote = TRUE
+  )
+
+```
