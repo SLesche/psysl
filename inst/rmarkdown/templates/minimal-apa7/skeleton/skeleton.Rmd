@@ -47,7 +47,7 @@ abstract: |
 keywords          : "keyword, more keyword, crazy keyword"
 wordcount         : "X"
 
-bibliography      : ["r-references.bib"] # put your ref files here
+# bibliography      : ["r-references.bib"] # put your ref files here
 
 floatsintext      : yes # for pics in text
 linenumbers       : no
@@ -102,30 +102,11 @@ knitr::dep_auto()
 ```
 
 <!-- Setup -->
-```{r setup-libraries}
-# think about calling renv here to make sure everyone has the same packages installed
-list.of.packages <- c("tidyverse", "rio", "rmarkdown", "papaja", "knitr")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
+<!-- Maybe setup R libraries here -->
 
-library(papaja)
-library(tidyverse)
-library(rio)
-library(rmarkdown)
-library(knitr)
-
-r_refs("markdown/r-references.bib")
-
-r_citations <- cite_r(
-  file = "markdown/r-references.bib",
-  pkgs = c("papaja", "tidyverse", "knitr"),
-  omit = FALSE,
-  footnote = TRUE
-  )
-
-```
 <!-- Here we can incorporate child markdown-documents as the separate parts -->
-
+# Introduction
+This part is the introduction
 
 <!-- References -->
 \newpage
